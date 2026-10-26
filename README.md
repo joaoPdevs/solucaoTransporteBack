@@ -29,3 +29,22 @@ Para contribuir, Certifique-se de documentar as alterações realizadas tanto no
 ```powershell
 .\mvnw.cmd spring-boot:run
 ```
+
+1. Corrige o JAVA_HOME
+   No terminal Git Bash do VS Code, copia e executa estes comandos:
+   export JAVA_HOME="/c/Users/joaor/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot"
+   export PATH="$JAVA_HOME/bin:$PATH"
+
+Esse é o caminho que identificamos anteriormente para tua instalação do JDK 25. 2. Confirma a versão utilizada
+Executa:
+echo "$JAVA_HOME"
+java -version
+javac -version
+./mvnw -version
+
+O resultado esperado no último comando é algo semelhante a:
+Java version: 25.0.2
+
+Se ainda aparecer Java 24, não prossigas para a compilação: precisamos corrigir o ambiente primeiro. 3. Tenta iniciar novamente
+Se o Maven mostrar Java 25, executa:
+./mvnw clean spring-boot:run
