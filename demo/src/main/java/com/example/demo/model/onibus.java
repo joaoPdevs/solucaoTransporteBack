@@ -1,10 +1,10 @@
 package com.example.demo.model;
 
-public class onibus {
+public class Onibus {
     private String linha;
     private int capacidade;
 
-    public onibus(String linha, int capacidade) {
+    public Onibus(String linha, int capacidade) {
         this.linha = linha;
         this.capacidade = capacidade;
     }

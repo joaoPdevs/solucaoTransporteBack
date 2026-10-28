@@ -3,7 +3,7 @@ package com.example.demo.service;
 import org.springframework.stereotype.Service;
 
 @Service
-public class viagemService {
+public class ViagemService {
 
     public double calcularPreco(double distancia) {
         double precoPorKm = 2.50;

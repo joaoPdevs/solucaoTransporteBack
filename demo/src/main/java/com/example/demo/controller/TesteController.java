@@ -1,6 +1,6 @@
 package com.example.demo.controller;
 
-import com.example.demo.model.onibus;
+import com.example.demo.model.Onibus;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,8 +11,8 @@ public class TesteController {
 
  
     @GetMapping
-    public onibus buscarPassageiro() {
-        return new onibus(
+    public Onibus buscarPassageiro() {
+        return new Onibus(
             "João",
             2
         );
